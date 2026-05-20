@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEW MTS - 모바일 UI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="topbar-left">
+        <span class="brand-icon">KP</span>
+        <div>
+          <p class="brand-title">카카오페이증권 스타일</p>
+          <p class="brand-subtitle">모바일 MTS 프로토타입</p>
+        </div>
+      </div>
+      <button class="icon-btn">≡</button>
+    </header>
+
+    <section class="market-tabs">
+      <button class="tab active">주식</button>
+      <button class="tab">코인</button>
+      <button class="tab">코글</button>
+    </section>
+
+    <section class="price-panel">
+      <div class="price-header">
+        <div>
+          <p class="symbol">AAPL</p>
+          <p class="desc">실시간 호가 / 주식</p>
+        </div>
+        <button class="action-btn">매수</button>
+      </div>
+      <div class="price-value">
+        <span>186.45</span>
+        <span class="price-change positive">+1.32 (0.71%)</span>
+      </div>
+      <div class="price-meta">
+        <div>
+          <span>고가</span>
+          <strong>187.10</strong>
+        </div>
+        <div>
+          <span>저가</span>
+          <strong>185.20</strong>
+        </div>
+        <div>
+          <span>거래량</span>
+          <strong>12.4K</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-board">
+      <div class="section-title">
+        <h2>실시간 호가창</h2>
+        <span>매도/매수 호가</span>
+      </div>
+      <div class="quote-row header">
+        <span>등락</span>
+        <span>매도호가</span>
+        <span>체결가</span>
+        <span>매수호가</span>
+      </div>
+      <div class="quote-row ask">
+        <span>▲0.7%</span>
+        <span>186.80</span>
+        <span>186.45</span>
+        <span>186.30</span>
+      </div>
+      <div class="quote-row ask">
+        <span>▲0.4%</span>
+        <span>186.90</span>
+        <span>186.55</span>
+        <span>186.35</span>
+      </div>
+      <div class="quote-row bid">
+        <span>▼0.3%</span>
+        <span>186.40</span>
+        <span>186.25</span>
+        <span>186.20</span>
+      </div>
+      <div class="quote-row bid">
+        <span>▼0.6%</span>
+        <span>186.10</span>
+        <span>186.00</span>
+        <span>185.90</span>
+      </div>
+    </section>
+
+    <section class="investor-status">
+      <div class="section-title">
+        <h2>투자자 현황</h2>
+        <span>외인 / 기관 / 개인</span>
+      </div>
+      <div class="status-grid">
+        <div class="status-card foreign">
+          <p>외국인</p>
+          <strong>+1.8%</strong>
+          <span>매수 우위</span>
+        </div>
+        <div class="status-card institution">
+          <p>기관</p>
+          <strong>-0.6%</strong>
+          <span>매도 우위</span>
+        </div>
+        <div class="status-card retail">
+          <p>개인</p>
+          <strong>+0.2%</strong>
+          <span>소폭 매수</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bottom-nav">
+      <button class="nav-btn active">홈</button>
+      <button class="nav-btn">종목</button>
+      <button class="nav-btn">뉴스</button>
+      <button class="nav-btn">내정보</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+:root {
+  color-scheme: light;
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #f7f7f7;
+  color: #1c1c1c;
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fff 0%, #f1f5fb 100%);
+}
+
+button {
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+}
+
+.app-shell {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 16px 16px 24px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 16px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(31, 38, 61, 0.08);
+}
+
+.topbar-left {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.brand-icon {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: #ffe247;
+  color: #1c1c1c;
+  font-weight: 800;
+}
+
+.brand-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.brand-subtitle {
+  margin: 2px 0 0;
+  color: #6f6f7c;
+  font-size: 12px;
+}
+
+.icon-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: #f1f2f5;
+  font-size: 18px;
+}
+
+.market-tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0 14px;
+}
+
+.tab {
+  flex: 1;
+  padding: 14px 0;
+  border-radius: 16px;
+  background: #f3f4f8;
+  color: #45454f;
+  font-weight: 700;
+}
+
+.tab.active {
+  background: linear-gradient(135deg, #ffd85d 0%, #ffca12 100%);
+  color: #1c1c1c;
+}
+
+.price-panel,
+.quote-board,
+.investor-status {
+  background: #fff;
+  border-radius: 26px;
+  padding: 18px;
+  box-shadow: 0 16px 34px rgba(46, 56, 78, 0.08);
+  margin-bottom: 18px;
+}
+
+.price-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.symbol {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.desc {
+  margin: 6px 0 0;
+  color: #7c7c8a;
+  font-size: 12px;
+}
+
+.action-btn {
+  padding: 10px 16px;
+  font-weight: 700;
+  border-radius: 16px;
+  background: #1d1d24;
+  color: #fff;
+}
+
+.price-value {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 18px 0;
+  gap: 12px;
+}
+
+.price-value span:first-child {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.price-change {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.price-change.positive {
+  color: #1d8f4d;
+}
+
+.price-change.negative {
+  color: #ff4f6d;
+}
+
+.price-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.price-meta div {
+  border-radius: 16px;
+  padding: 12px;
+  background: #f7f8fc;
+  text-align: center;
+}
+
+.price-meta span {
+  display: block;
+  margin-bottom: 4px;
+  color: #8d8d98;
+  font-size: 12px;
+}
+
+.quote-board .section-title,
+.investor-status .section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.section-title span {
+  color: #8d8d98;
+  font-size: 12px;
+}
+
+.quote-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f1f6;
+}
+
+.quote-row:last-child {
+  border-bottom: none;
+}
+
+.quote-row.header {
+  color: #8d8d98;
+  font-weight: 700;
+}
+
+.quote-row.ask span {
+  color: #ff5f62;
+}
+
+.quote-row.bid span {
+  color: #1d8f4d;
+}
+
+.investor-status .status-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.status-card {
+  border-radius: 22px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: linear-gradient(180deg, #f9f9fb 0%, #fff 100%);
+}
+
+.status-card p {
+  margin: 0;
+  color: #8f8f9e;
+  font-size: 12px;
+}
+
+.status-card strong {
+  font-size: 18px;
+}
+
+.status-card span {
+  color: #7a7a82;
+  font-size: 12px;
+}
+
+.status-card.foreign strong {
+  color: #1d8f4d;
+}
+
+.status-card.institution strong {
+  color: #ff5f62;
+}
+
+.status-card.retail strong {
+  color: #3066ff;
+}
+
+.bottom-nav {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.nav-btn {
+  border-radius: 16px;
+  padding: 14px 0;
+  background: #f4f5f8;
+  color: #6b6b7a;
+  font-weight: 700;
+}
+
+.nav-btn.active {
+  background: #1d1d24;
+  color: #fff;
+}
+
+@media (max-width: 420px) {
+  .app-shell {
+    padding: 14px 12px 22px;
+  }
+}
